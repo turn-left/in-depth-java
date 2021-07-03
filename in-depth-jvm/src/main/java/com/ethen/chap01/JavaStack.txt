@@ -1,0 +1,92 @@
+Classfile /D:/source2021/in-depth-java/in-depth-jvm/target/classes/com/ethen/chap01/JavaStack.class
+  Last modified 2021-7-1; size 566 bytes
+  MD5 checksum c0f8638f14d3606b6bb46e3193587aa5
+  Compiled from "JavaStack.java"
+public class com.ethen.chap01.JavaStack
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #5.#24         // java/lang/Object."<init>":()V
+   #2 = Class              #25            // com/ethen/chap01/JavaStack
+   #3 = Methodref          #2.#24         // com/ethen/chap01/JavaStack."<init>":()V
+   #4 = Methodref          #2.#26         // com/ethen/chap01/JavaStack.king:(I)V
+   #5 = Class              #27            // java/lang/Object
+   #6 = Utf8               <init>
+   #7 = Utf8               ()V
+   #8 = Utf8               Code
+   #9 = Utf8               LineNumberTable
+  #10 = Utf8               LocalVariableTable
+  #11 = Utf8               this
+  #12 = Utf8               Lcom/ethen/chap01/JavaStack;
+  #13 = Utf8               main
+  #14 = Utf8               ([Ljava/lang/String;)V
+  #15 = Utf8               args
+  #16 = Utf8               [Ljava/lang/String;
+  #17 = Utf8               javaStack
+  #18 = Utf8               king
+  #19 = Utf8               (I)V
+  #20 = Utf8               money
+  #21 = Utf8               I
+  #22 = Utf8               SourceFile
+  #23 = Utf8               JavaStack.java
+  #24 = NameAndType        #6:#7          // "<init>":()V
+  #25 = Utf8               com/ethen/chap01/JavaStack
+  #26 = NameAndType        #18:#19        // king:(I)V
+  #27 = Utf8               java/lang/Object
+{
+  public com.ethen.chap01.JavaStack();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 9: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lcom/ethen/chap01/JavaStack;
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=2, args_size=1
+         0: new           #2                  // class com/ethen/chap01/JavaStack
+         3: dup
+         4: invokespecial #3                  // Method "<init>":()V
+         7: astore_1
+         8: aload_1
+         9: sipush        1000
+        12: invokevirtual #4                  // Method king:(I)V
+        15: return
+      LineNumberTable:
+        line 11: 0
+        line 12: 8
+        line 13: 15
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      16     0  args   [Ljava/lang/String;
+            8       8     1 javaStack   Lcom/ethen/chap01/JavaStack;
+
+  public void king(int);
+    descriptor: (I)V
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: iload_1
+         1: bipush        100
+         3: isub
+         4: istore_1
+         5: return
+      LineNumberTable:
+        line 16: 0
+        line 17: 5
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       6     0  this   Lcom/ethen/chap01/JavaStack;
+            0       6     1 money   I
+}
+SourceFile: "JavaStack.java"
