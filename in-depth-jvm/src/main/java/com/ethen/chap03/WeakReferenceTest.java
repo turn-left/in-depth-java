@@ -10,6 +10,8 @@ import java.lang.ref.WeakReference;
  * -Xms100m
  * -Xmx100m
  * -XX:+PrintGCDetails
+ * <p>
+ * WeakHashMap¡¢ThreadLocal
  *
  * @author ethenyang@126.com
  * @since 2021/07/03
