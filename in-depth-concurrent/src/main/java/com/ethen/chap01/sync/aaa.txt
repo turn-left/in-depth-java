@@ -1,0 +1,279 @@
+Classfile /D:/source2021/in-depth-java/in-depth-concurrent/target/classes/com/ethen/chap01/sync/UseSync.class
+  Last modified 2021-7-11; size 1671 bytes
+  MD5 checksum 6d9020f86db0825aeb3297adf367c026
+  Compiled from "UseSync.java"
+public class com.ethen.chap01.sync.UseSync
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #2.#55         // java/lang/Object."<init>":()V
+   #2 = Class              #56            // java/lang/Object
+   #3 = Fieldref           #17.#57        // com/ethen/chap01/sync/UseSync.lockObj:Ljava/lang/Object;
+   #4 = Fieldref           #58.#59        // java/lang/System.err:Ljava/io/PrintStream;
+   #5 = String             #60            // invoke new UseSync()...
+   #6 = Methodref          #61.#62        // java/io/PrintStream.println:(Ljava/lang/String;)V
+   #7 = Class              #63            // java/lang/StringBuilder
+   #8 = Methodref          #7.#55         // java/lang/StringBuilder."<init>":()V
+   #9 = String             #64            // add result:
+  #10 = Methodref          #7.#65         // java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #11 = Methodref          #7.#66         // java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+  #12 = Methodref          #7.#67         // java/lang/StringBuilder.toString:()Ljava/lang/String;
+  #13 = String             #68            // multiply result2:
+  #14 = Methodref          #69.#70        // java/lang/Math.pow:(DD)D
+  #15 = String             #71            // pow result3:
+  #16 = Methodref          #7.#72         // java/lang/StringBuilder.append:(D)Ljava/lang/StringBuilder;
+  #17 = Class              #73            // com/ethen/chap01/sync/UseSync
+  #18 = Methodref          #17.#55        // com/ethen/chap01/sync/UseSync."<init>":()V
+  #19 = Methodref          #17.#74        // com/ethen/chap01/sync/UseSync.add:(II)V
+  #20 = Methodref          #17.#75        // com/ethen/chap01/sync/UseSync.multiply:(II)V
+  #21 = Utf8               lockObj
+  #22 = Utf8               Ljava/lang/Object;
+  #23 = Utf8               <init>
+  #24 = Utf8               ()V
+  #25 = Utf8               Code
+  #26 = Utf8               LineNumberTable
+  #27 = Utf8               LocalVariableTable
+  #28 = Utf8               this
+  #29 = Utf8               Lcom/ethen/chap01/sync/UseSync;
+  #30 = Utf8               add
+  #31 = Utf8               (II)V
+  #32 = Utf8               a
+  #33 = Utf8               I
+  #34 = Utf8               b
+  #35 = Utf8               result
+  #36 = Utf8               multiply
+  #37 = Utf8               result2
+  #38 = Utf8               pow
+  #39 = Utf8               (DD)V
+  #40 = Utf8               result3
+  #41 = Utf8               D
+  #42 = Utf8               n
+  #43 = Utf8               StackMapTable
+  #44 = Class              #73            // com/ethen/chap01/sync/UseSync
+  #45 = Class              #56            // java/lang/Object
+  #46 = Class              #76            // java/lang/Throwable
+  #47 = Utf8               main
+  #48 = Utf8               ([Ljava/lang/String;)V
+  #49 = Utf8               args
+  #50 = Utf8               [Ljava/lang/String;
+  #51 = Utf8               useSync
+  #52 = Utf8               useSync2
+  #53 = Utf8               SourceFile
+  #54 = Utf8               UseSync.java
+  #55 = NameAndType        #23:#24        // "<init>":()V
+  #56 = Utf8               java/lang/Object
+  #57 = NameAndType        #21:#22        // lockObj:Ljava/lang/Object;
+  #58 = Class              #77            // java/lang/System
+  #59 = NameAndType        #78:#79        // err:Ljava/io/PrintStream;
+  #60 = Utf8               invoke new UseSync()...
+  #61 = Class              #80            // java/io/PrintStream
+  #62 = NameAndType        #81:#82        // println:(Ljava/lang/String;)V
+  #63 = Utf8               java/lang/StringBuilder
+  #64 = Utf8               add result:
+  #65 = NameAndType        #83:#84        // append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #66 = NameAndType        #83:#85        // append:(I)Ljava/lang/StringBuilder;
+  #67 = NameAndType        #86:#87        // toString:()Ljava/lang/String;
+  #68 = Utf8               multiply result2:
+  #69 = Class              #88            // java/lang/Math
+  #70 = NameAndType        #38:#89        // pow:(DD)D
+  #71 = Utf8               pow result3:
+  #72 = NameAndType        #83:#90        // append:(D)Ljava/lang/StringBuilder;
+  #73 = Utf8               com/ethen/chap01/sync/UseSync
+  #74 = NameAndType        #30:#31        // add:(II)V
+  #75 = NameAndType        #36:#31        // multiply:(II)V
+  #76 = Utf8               java/lang/Throwable
+  #77 = Utf8               java/lang/System
+  #78 = Utf8               err
+  #79 = Utf8               Ljava/io/PrintStream;
+  #80 = Utf8               java/io/PrintStream
+  #81 = Utf8               println
+  #82 = Utf8               (Ljava/lang/String;)V
+  #83 = Utf8               append
+  #84 = Utf8               (Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #85 = Utf8               (I)Ljava/lang/StringBuilder;
+  #86 = Utf8               toString
+  #87 = Utf8               ()Ljava/lang/String;
+  #88 = Utf8               java/lang/Math
+  #89 = Utf8               (DD)D
+  #90 = Utf8               (D)Ljava/lang/StringBuilder;
+{
+  public com.ethen.chap01.sync.UseSync();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=3, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: new           #2                  // class java/lang/Object
+         8: dup
+         9: invokespecial #1                  // Method java/lang/Object."<init>":()V
+        12: putfield      #3                  // Field lockObj:Ljava/lang/Object;
+        15: getstatic     #4                  // Field java/lang/System.err:Ljava/io/PrintStream;
+        18: ldc           #5                  // String invoke new UseSync()...
+        20: invokevirtual #6                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        23: return
+      LineNumberTable:
+        line 10: 0
+        line 8: 4
+        line 11: 15
+        line 12: 23
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      24     0  this   Lcom/ethen/chap01/sync/UseSync;
+
+  public synchronized void add(int, int);
+    descriptor: (II)V
+    flags: ACC_PUBLIC, ACC_SYNCHRONIZED
+    Code:
+      stack=3, locals=4, args_size=3
+         0: iload_1
+         1: iload_2
+         2: iadd
+         3: istore_3
+         4: getstatic     #4                  // Field java/lang/System.err:Ljava/io/PrintStream;
+         7: new           #7                  // class java/lang/StringBuilder
+        10: dup
+        11: invokespecial #8                  // Method java/lang/StringBuilder."<init>":()V
+        14: ldc           #9                  // String add result:
+        16: invokevirtual #10                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        19: iload_3
+        20: invokevirtual #11                 // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+        23: invokevirtual #12                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+        26: invokevirtual #6                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        29: return
+      LineNumberTable:
+        line 15: 0
+        line 16: 4
+        line 17: 29
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      30     0  this   Lcom/ethen/chap01/sync/UseSync;
+            0      30     1     a   I
+            0      30     2     b   I
+            4      26     3 result   I
+
+  public synchronized void multiply(int, int);
+    descriptor: (II)V
+    flags: ACC_PUBLIC, ACC_SYNCHRONIZED
+    Code:
+      stack=3, locals=4, args_size=3
+         0: iload_1
+         1: iload_2
+         2: imul
+         3: istore_3
+         4: getstatic     #4                  // Field java/lang/System.err:Ljava/io/PrintStream;
+         7: new           #7                  // class java/lang/StringBuilder
+        10: dup
+        11: invokespecial #8                  // Method java/lang/StringBuilder."<init>":()V
+        14: ldc           #13                 // String multiply result2:
+        16: invokevirtual #10                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        19: iload_3
+        20: invokevirtual #11                 // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+        23: invokevirtual #12                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+        26: invokevirtual #6                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        29: return
+      LineNumberTable:
+        line 20: 0
+        line 21: 4
+        line 22: 29
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      30     0  this   Lcom/ethen/chap01/sync/UseSync;
+            0      30     1     a   I
+            0      30     2     b   I
+            4      26     3 result2   I
+
+  public void pow(double, double);
+    descriptor: (DD)V
+    flags: ACC_PUBLIC
+    Code:
+      stack=4, locals=9, args_size=3
+         0: aload_0
+         1: getfield      #3                  // Field lockObj:Ljava/lang/Object;
+         4: dup
+         5: astore        5
+         7: monitorenter
+         8: dload_1
+         9: dload_3
+        10: invokestatic  #14                 // Method java/lang/Math.pow:(DD)D
+        13: dstore        6
+        15: getstatic     #4                  // Field java/lang/System.err:Ljava/io/PrintStream;
+        18: new           #7                  // class java/lang/StringBuilder
+        21: dup
+        22: invokespecial #8                  // Method java/lang/StringBuilder."<init>":()V
+        25: ldc           #15                 // String pow result3:
+        27: invokevirtual #10                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        30: dload         6
+        32: invokevirtual #16                 // Method java/lang/StringBuilder.append:(D)Ljava/lang/StringBuilder;
+        35: invokevirtual #12                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+        38: invokevirtual #6                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        41: aload         5
+        43: monitorexit
+        44: goto          55
+        47: astore        8
+        49: aload         5
+        51: monitorexit
+        52: aload         8
+        54: athrow
+        55: return
+      Exception table:
+         from    to  target type
+             8    44    47   any
+            47    52    47   any
+      LineNumberTable:
+        line 25: 0
+        line 26: 8
+        line 27: 15
+        line 28: 41
+        line 29: 55
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           15      26     6 result3   D
+            0      56     0  this   Lcom/ethen/chap01/sync/UseSync;
+            0      56     1     a   D
+            0      56     3     n   D
+      StackMapTable: number_of_entries = 2
+        frame_type = 255 /* full_frame */
+          offset_delta = 47
+          locals = [ class com/ethen/chap01/sync/UseSync, double, double, class java/lang/Object ]
+          stack = [ class java/lang/Throwable ]
+        frame_type = 250 /* chop */
+          offset_delta = 7
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=3, locals=3, args_size=1
+         0: new           #17                 // class com/ethen/chap01/sync/UseSync
+         3: dup
+         4: invokespecial #18                 // Method "<init>":()V
+         7: astore_1
+         8: new           #17                 // class com/ethen/chap01/sync/UseSync
+        11: dup
+        12: invokespecial #18                 // Method "<init>":()V
+        15: astore_2
+        16: aload_1
+        17: bipush        23
+        19: bipush        15
+        21: invokevirtual #19                 // Method add:(II)V
+        24: aload_1
+        25: bipush        15
+        27: bipush        65
+        29: invokevirtual #20                 // Method multiply:(II)V
+        32: return
+      LineNumberTable:
+        line 32: 0
+        line 33: 8
+        line 34: 16
+        line 35: 24
+        line 36: 32
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      33     0  args   [Ljava/lang/String;
+            8      25     1 useSync   Lcom/ethen/chap01/sync/UseSync;
+           16      17     2 useSync2   Lcom/ethen/chap01/sync/UseSync;
+}
+SourceFile: "UseSync.java"
