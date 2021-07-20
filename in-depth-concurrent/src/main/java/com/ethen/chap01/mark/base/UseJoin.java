@@ -1,6 +1,6 @@
 package com.ethen.chap01.mark.base;
 
-import cn.enjoyedu.tools.SleepTools;
+import com.ethen.common.SleepTools;
 
 /**
  *类说明：演示Join（）方法的使用

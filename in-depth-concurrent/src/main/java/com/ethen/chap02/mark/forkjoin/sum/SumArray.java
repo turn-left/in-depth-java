@@ -1,6 +1,6 @@
 package com.ethen.chap02.mark.forkjoin.sum;
 
-import cn.enjoyedu.tools.SleepTools;
+import com.ethen.common.SleepTools;
 
 import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.RecursiveTask;

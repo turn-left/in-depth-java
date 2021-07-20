@@ -1,6 +1,6 @@
 package com.ethen.chap01.mark.vola;
 
-import cn.enjoyedu.tools.SleepTools;
+import com.ethen.common.SleepTools;
 
 /**
  * 类说明：演示Volatile的提供的可见性

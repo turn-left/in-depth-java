@@ -1,6 +1,6 @@
 package com.ethen.chap02.mark.forkjoin.sort;
 
-import cn.enjoyedu.ch2.forkjoin.sum.MakeArray;
+import com.ethen.chap02.mark.forkjoin.sum.MakeArray;
 
 /**
  * 类说明：简单插入排序（升序）

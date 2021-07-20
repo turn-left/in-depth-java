@@ -1,6 +1,6 @@
 package com.ethen.chap02.mark.tools;
 
-import cn.enjoyedu.tools.SleepTools;
+import com.ethen.common.SleepTools;
 
 import java.util.concurrent.CountDownLatch;
 

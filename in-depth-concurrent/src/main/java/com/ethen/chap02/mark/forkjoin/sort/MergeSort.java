@@ -1,6 +1,7 @@
 package com.ethen.chap02.mark.forkjoin.sort;
 
-import cn.enjoyedu.ch2.forkjoin.sum.MakeArray;
+
+import com.ethen.chap02.mark.forkjoin.sum.MakeArray;
 
 import java.util.Arrays;
 
@@ -9,7 +10,7 @@ import java.util.Arrays;
  */
 public class MergeSort {
     public static int[] sort(int[] array) {
-        if(array.length<=MakeArray.THRESHOLD){
+        if(array.length<= MakeArray.THRESHOLD){
             return InsertionSort.sort(array);
         }else{
             /*切分数组，然后递归调用*/

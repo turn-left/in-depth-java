@@ -1,6 +1,6 @@
 package com.ethen.chap04.mark.aqs;
 
-import cn.enjoyedu.tools.SleepTools;
+import com.ethen.common.SleepTools;
 
 import java.util.concurrent.locks.Lock;
 

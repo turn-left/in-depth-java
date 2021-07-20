@@ -1,6 +1,6 @@
 package com.ethen.chap01.mark.threadlocal;
 
-import cn.enjoyedu.tools.SleepTools;
+import com.ethen.common.SleepTools;
 
 /**
  * 类说明：ThreadLocal的线程不安全演示

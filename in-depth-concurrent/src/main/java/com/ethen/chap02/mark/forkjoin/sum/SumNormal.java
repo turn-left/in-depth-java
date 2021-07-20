@@ -1,6 +1,6 @@
 package com.ethen.chap02.mark.forkjoin.sum;
 
-import cn.enjoyedu.tools.SleepTools;
+import com.ethen.common.SleepTools;
 
 /**
  * 单线程执行累加

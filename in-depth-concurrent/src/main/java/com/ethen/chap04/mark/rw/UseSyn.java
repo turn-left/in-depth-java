@@ -1,6 +1,6 @@
 package com.ethen.chap04.mark.rw;
 
-import cn.enjoyedu.tools.SleepTools;
+import com.ethen.common.SleepTools;
 
 /**
  *类说明：用内置锁来实现商品服务接口

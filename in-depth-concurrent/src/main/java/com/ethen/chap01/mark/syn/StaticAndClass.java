@@ -1,6 +1,6 @@
 package com.ethen.chap01.mark.syn;
 
-import cn.enjoyedu.tools.SleepTools;
+import com.ethen.common.SleepTools;
 
 /**
  *类说明：类锁和锁static变量也是不同的

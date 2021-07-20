@@ -1,6 +1,6 @@
 package com.ethen.chap01.mark.pool;
 
-import cn.enjoyedu.tools.SleepTools;
+import com.ethen.common.SleepTools;
 
 import java.sql.*;
 import java.util.Map;

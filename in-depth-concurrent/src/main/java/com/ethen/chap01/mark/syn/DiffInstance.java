@@ -1,6 +1,6 @@
 package com.ethen.chap01.mark.syn;
 
-import cn.enjoyedu.tools.SleepTools;
+import com.ethen.common.SleepTools;
 
 /**
  *类说明：锁的实例不一样，也是可以并行的
