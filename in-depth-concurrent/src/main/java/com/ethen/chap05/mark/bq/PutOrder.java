@@ -16,7 +16,7 @@ public class PutOrder implements Runnable {
 	public void run() {
 		//5秒后到期
 		Order orderTb = new Order("Tb12345",366);
-		ItemVo<Order> itemTb = new ItemVo<Order>(5,orderTb);
+		ItemVo<Order> itemTb = new ItemVo<>(5,orderTb);
 		queue.offer(itemTb);
 		System.out.println("订单5秒后超时："+orderTb.getOrderNo()+";"
                 +orderTb.getOrderMoney());
