@@ -1,6 +1,7 @@
 package com.ethen.chap07.mark.safeclass.safepublish;
 
-import cn.enjoyedu.ch7.safeclass.UserVo;
+
+import com.ethen.chap07.mark.safeclass.UserVo;
 
 /**
  * 仿Collections对容器的包装，将内部成员对象进行线程安全包装

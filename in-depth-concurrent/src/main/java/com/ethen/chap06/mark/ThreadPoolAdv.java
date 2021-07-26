@@ -1,6 +1,6 @@
 package com.ethen.chap06.mark;
 
-import cn.enjoyedu.tools.SleepTools;
+import com.ethen.common.SleepTools;
 
 import java.util.Random;
 import java.util.concurrent.*;

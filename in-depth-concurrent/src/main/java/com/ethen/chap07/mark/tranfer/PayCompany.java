@@ -1,8 +1,7 @@
 package com.ethen.chap07.mark.tranfer;
 
-
-import cn.enjoyedu.ch7.tranfer.service.ITransfer;
-import cn.enjoyedu.ch7.tranfer.service.SafeOperateToo;
+import com.ethen.chap07.mark.tranfer.service.ITransfer;
+import com.ethen.chap07.mark.tranfer.service.SafeOperateToo;
 
 /**
  *@author Mark老师   享学课堂 https://enjoy.ke.qq.com 
