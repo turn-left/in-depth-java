@@ -1,6 +1,6 @@
 package com.ethen.chap08.mark.ch8a.vo;
 
-import cn.enjoyedu.ch8a.CheckJobProcesser;
+import com.ethen.chap08.mark.ch8a.CheckJobProcesser;
 
 import java.util.LinkedList;
 import java.util.List;

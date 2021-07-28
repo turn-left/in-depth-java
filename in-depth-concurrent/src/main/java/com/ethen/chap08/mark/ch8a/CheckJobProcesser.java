@@ -3,6 +3,7 @@ package com.ethen.chap08.mark.ch8a;
 
 
 import com.ethen.chap05.mark.bq.ItemVo;
+import com.ethen.chap08.mark.ch8a.vo.JobInfo;
 
 import java.util.Map;
 import java.util.concurrent.DelayQueue;
@@ -30,7 +31,7 @@ public class CheckJobProcesser {
         private static DelayQueue<ItemVo<String>> queue
                  = CheckJobProcesser.queue;
         //缓存的工作信息
-        private static Map<String,JobInfo<?>> jobInfoMap
+        private static Map<String, JobInfo<?>> jobInfoMap
                 = PendingJobPool.getMap();
 
         @Override

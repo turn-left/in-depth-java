@@ -1,6 +1,6 @@
 package com.ethen.chap08.mark.ch8b.service.question;
 
-import cn.enjoyedu.ch8b.assist.SL_QuestionBank;
+import com.ethen.chap08.mark.ch8b.assist.SL_QuestionBank;
 
 /**
  *类说明：模拟解析题目文本，下载图片等操作，返回解析后的文本

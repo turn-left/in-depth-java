@@ -1,9 +1,10 @@
 package com.ethen.chap08.mark.ch8a.demo;
 
-import cn.enjoyedu.ch8a.vo.ITaskProcesser;
-import cn.enjoyedu.ch8a.vo.TaskResult;
-import cn.enjoyedu.ch8a.vo.TaskResultType;
-import cn.enjoyedu.tools.SleepTools;
+
+import com.ethen.chap08.mark.ch8a.vo.ITaskProcesser;
+import com.ethen.chap08.mark.ch8a.vo.TaskResult;
+import com.ethen.chap08.mark.ch8a.vo.TaskResultType;
+import com.ethen.common.SleepTools;
 
 import java.util.Random;
 

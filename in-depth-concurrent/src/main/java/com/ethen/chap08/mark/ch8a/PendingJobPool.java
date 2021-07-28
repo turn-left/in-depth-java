@@ -1,9 +1,9 @@
 package com.ethen.chap08.mark.ch8a;
 
-import cn.enjoyedu.ch8a.vo.ITaskProcesser;
-import cn.enjoyedu.ch8a.vo.JobInfo;
-import cn.enjoyedu.ch8a.vo.TaskResult;
-import cn.enjoyedu.ch8a.vo.TaskResultType;
+import com.ethen.chap08.mark.ch8a.vo.ITaskProcesser;
+import com.ethen.chap08.mark.ch8a.vo.JobInfo;
+import com.ethen.chap08.mark.ch8a.vo.TaskResult;
+import com.ethen.chap08.mark.ch8a.vo.TaskResultType;
 
 import java.util.List;
 import java.util.Map;

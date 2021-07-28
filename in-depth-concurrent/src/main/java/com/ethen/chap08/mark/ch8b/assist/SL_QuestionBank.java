@@ -1,6 +1,6 @@
 package com.ethen.chap08.mark.ch8b.assist;
 
-import cn.enjoyedu.ch8b.vo.QuestionInDBVo;
+import com.ethen.chap08.mark.ch8b.vo.QuestionInDBVo;
 
 import java.util.Random;
 import java.util.concurrent.ConcurrentHashMap;

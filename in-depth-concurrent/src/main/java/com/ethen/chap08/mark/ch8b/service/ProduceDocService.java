@@ -1,10 +1,10 @@
 package com.ethen.chap08.mark.ch8b.service;
 
-import cn.enjoyedu.ch8b.assist.SL_Busi;
-import cn.enjoyedu.ch8b.service.question.ParallelQstService;
-import cn.enjoyedu.ch8b.service.question.SingleQstService;
-import cn.enjoyedu.ch8b.vo.SrcDocVo;
-import cn.enjoyedu.ch8b.vo.TaskResultVo;
+import com.ethen.chap08.mark.ch8b.assist.SL_Busi;
+import com.ethen.chap08.mark.ch8b.service.question.ParallelQstService;
+import com.ethen.chap08.mark.ch8b.service.question.SingleQstService;
+import com.ethen.chap08.mark.ch8b.vo.SrcDocVo;
+import com.ethen.chap08.mark.ch8b.vo.TaskResultVo;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -46,7 +46,7 @@ public class ProduceDocService {
     public static String makeDocAsyn(SrcDocVo pendingDocVo) throws ExecutionException, InterruptedException {
         System.out.println("开始处理文档："+ pendingDocVo.getDocName());
         /*每个题目的处理结果*/
-        Map<Integer,TaskResultVo> qstResultMap = new HashMap<>();
+        Map<Integer, TaskResultVo> qstResultMap = new HashMap<>();
         for(Integer questionId:pendingDocVo.getQuestionList()){
             qstResultMap.put(questionId,
                     ParallelQstService.makeQuestion(questionId));
