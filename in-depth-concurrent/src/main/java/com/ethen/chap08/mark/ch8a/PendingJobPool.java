@@ -26,10 +26,7 @@ public class PendingJobPool {
 	/*工作信息的存放容器*/
 	private static ConcurrentHashMap<String,JobInfo<?>> jobInfoMap
 		= new ConcurrentHashMap<String, JobInfo<?>>();
-//	/*检查过期工作的处理器*/
-//	private static CheckJobProcesser checkJob
-//		= CheckJobProcesser.getInstance();
-	
+
 	public static Map<String, JobInfo<?>> getMap(){
 		return jobInfoMap;
 	}
