@@ -12,6 +12,7 @@
         <module>in-depth-jvm</module>
         <module>in-depth-concurrent</module>
         <module>in-depth-concurrent</module>
+        <module>in-depth-redis</module>
     </modules>
 
     <properties>
