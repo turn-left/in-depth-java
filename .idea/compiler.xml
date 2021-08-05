@@ -10,6 +10,7 @@
         <module name="concurrent" />
         <module name="in-depth-jvm" />
         <module name="in-depth-concurrent" />
+        <module name="in-depth-redis" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8" />
