@@ -88,7 +88,7 @@ public class RedisLock implements Lock {
             jedis.del(key);
         }
        */
-        String script = FileUtils.getScript("unlock.lua");
+        String script = FileUtils.getScript("scripts/unlock.lua");
         // 使用lua脚本确保解锁过程的原子性
         jedis.eval(script, Collections.singletonList(key), Collections.singletonList(threadLocal.get()));
     }

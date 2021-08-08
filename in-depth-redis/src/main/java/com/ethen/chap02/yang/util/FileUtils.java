@@ -42,7 +42,7 @@ public class FileUtils {
     }
 	
 	public static void main(String[] args) {
-        String path = FileUtils.class.getClassLoader().getResource("unlock.lua").getPath();
+        String path = FileUtils.class.getClassLoader().getResource("scripts/unlock.lua").getPath();
 		String script = FileUtils.readFileByLines(path);
 		System.out.println(script);
 	}

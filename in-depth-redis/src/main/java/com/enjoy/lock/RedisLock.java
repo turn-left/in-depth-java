@@ -71,7 +71,7 @@ public class RedisLock implements Lock {
 	//正确解锁方式
 	public void unlock() {
 		//读取lua脚本
-		String script = FileUtils.getScript("unlock.lua");
+		String script = FileUtils.getScript("scripts/unlock.lua");
 		//获取redis的原始连接
 		Jedis jedis = (Jedis) factory.getConnection().getNativeConnection();
 		//通过原始连接连接redis执行lua脚本
