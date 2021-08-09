@@ -3,8 +3,8 @@ package com.ethen.chap03.james01.redpack;
 import java.util.UUID;
 import java.util.concurrent.CountDownLatch;
 
-import com.james.cache.basic.Basic;
-import com.james.cache.utils.JedisUtils;
+import com.ethen.chap03.james01.basic.Basic;
+import com.ethen.chap03.james01.utils.JedisUtils;
 
 /**
  * 多线程模拟用户抢红包
@@ -13,7 +13,7 @@ public class GetRedPack {
     //抢红包的方法
 	static public void getHongBao() throws InterruptedException {
 		final CountDownLatch latch = new CountDownLatch(Basic.threadCount);//20 //发枪器
-		for(int i = 0 ; i < Basic.threadCount ; i ++){  //20线程
+		for(int i = 0; i < Basic.threadCount ; i ++){  //20线程
 			Thread thread = new Thread(){
 				public void run(){
 					latch.countDown();

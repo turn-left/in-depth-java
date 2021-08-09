@@ -8,23 +8,22 @@ import java.util.Set;
 
 import javax.annotation.Resource;
 
+import com.ethen.chap03.james02.basic.Constants;
+import com.ethen.chap03.james02.service.RedisArticleService;
+import com.ethen.chap03.james02.utils.JedisUtils;
 import org.springframework.stereotype.Service;
-
-import com.james.cache.basic.Constants;
-import com.james.cache.service.RedisArticleService;
-import com.james.cache.utils.JedisUtils;
 
 /**
 * 文章发布使用redis技术
 */
 @Service
-public class RedisArticleServiceImpl implements RedisArticleService{
+public class RedisArticleServiceImpl implements RedisArticleService {
 
 	@Resource
 	private JedisUtils jedis;
 	/**
 	* 文章提交发布
-	* @param 标题  内容  链接  用户ID
+	* @param title 标题  内容  链接  用户ID
 	* @return 文章的ID
 	*/
 	@Override
@@ -63,7 +62,7 @@ public class RedisArticleServiceImpl implements RedisArticleService{
 	
 	/**
 	* 文章投票
-	* @param  用户ID 文章ID（article:001）  //001
+	* @param userId 用户ID 文章ID（article:001）  //001
 	*/
 	@Override
 	public void articleVote(String userId, String article) {

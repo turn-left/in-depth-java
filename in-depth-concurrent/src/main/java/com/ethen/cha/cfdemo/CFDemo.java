@@ -1,6 +1,6 @@
 package com.ethen.cha.cfdemo;
 
-import cn.enjoyedu.tools.SleepTools;
+import com.ethen.common.SleepTools;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;

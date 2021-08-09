@@ -1,7 +1,8 @@
 package com.ethen.chap03.james01.main;
 
-import com.james.cache.redpack.GenRedPack;
-import com.james.cache.redpack.GetRedPack;
+
+import com.ethen.chap03.james01.redpack.GenRedPack;
+import com.ethen.chap03.james01.redpack.GetRedPack;
 
 public class MainTestRedPack {
 	

@@ -11,6 +11,7 @@ public class JedisUtils {
     public static Jedis getClient() {
         Jedis jedis = new Jedis(REDIS_HOST, REDIS_PORT);
         String auth = jedis.auth(REDIS_SECRET);
+        System.out.println("auth:" + auth);
         return jedis;
     }
 }

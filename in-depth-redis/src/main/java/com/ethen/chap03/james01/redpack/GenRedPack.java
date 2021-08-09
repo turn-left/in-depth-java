@@ -3,8 +3,8 @@ package com.ethen.chap03.james01.redpack;
 import java.util.concurrent.CountDownLatch;
 
 import com.alibaba.fastjson.JSONObject;
-import com.james.cache.basic.Basic;
-import com.james.cache.utils.JedisUtils;
+import com.ethen.chap03.james01.basic.Basic;
+import com.ethen.chap03.james01.utils.JedisUtils;
 
 public class GenRedPack {
 	/**
