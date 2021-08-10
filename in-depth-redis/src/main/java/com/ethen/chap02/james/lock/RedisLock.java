@@ -1,6 +1,6 @@
 package com.ethen.chap02.james.lock;
 
-import com.ethen.chap02.james.utils.FileUtils;
+import com.ethen.utils.FileUtils;
 import org.springframework.data.redis.connection.jedis.JedisConnectionFactory;
 import org.springframework.stereotype.Service;
 import redis.clients.jedis.Jedis;

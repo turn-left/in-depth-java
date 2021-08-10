@@ -1,4 +1,4 @@
-package com.ethen.chap02.james.utils;
+package com.ethen.utils;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;

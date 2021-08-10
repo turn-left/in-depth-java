@@ -9,4 +9,5 @@ import lombok.Data;
 public class UserInfo {
     private String userId;
     private String nickname;
+    private String realName;
 }
