@@ -6,11 +6,7 @@ import java.util.Set;
 
 import org.springframework.stereotype.Component;
 
-import redis.clients.jedis.Jedis;
-import redis.clients.jedis.JedisPool;
-import redis.clients.jedis.JedisPoolConfig;
-import redis.clients.jedis.Pipeline;
-import redis.clients.jedis.BinaryClient.LIST_POSITION;
+import redis.clients.jedis.*;
 
 /**
 * Redis通用工具类
@@ -29,9 +25,9 @@ public class JedisUtils {
 	/**
 	 * 传入ip和端口号构建redis 连接
 	 * 
-	 * @param ip
+	 * param ip
 	 *            ip
-	 * @param prot
+	 * param prot
 	 *            端口
 	 */
 	public JedisUtils() {
@@ -91,8 +87,8 @@ public class JedisUtils {
 	/**
 	 * 向redis存入序列化的key和value,并释放连接资 如果key已经存在 则覆
 	 * 
-	 * @param key
-	 * @param value
+	 * param key
+	 * param value
 	 * @return 成功 返回OK 失败返回 0
 	 */
 	public String setSerializer(byte[] keyBytes, byte[] valueBytes) {
@@ -864,7 +860,7 @@ public class JedisUtils {
 	 *            添加的value
 	 * @return
 	 */
-	public Long linsert(String key, LIST_POSITION where, String pivot, String value) {
+	public Long linsert(String key, ListPosition where, String pivot, String value) {
 		Jedis jedis = null;
 		Long res = null;
 		try {

@@ -4,6 +4,7 @@ import com.ethen.chap02.yang.util.FileUtils;
 import com.ethen.chap02.yang.util.JedisUtils;
 import lombok.extern.slf4j.Slf4j;
 import redis.clients.jedis.Jedis;
+import redis.clients.jedis.params.SetParams;
 
 import java.util.Collections;
 import java.util.UUID;
@@ -64,7 +65,7 @@ public class RedisLock implements Lock {
     public boolean tryLock() {
         String uuid = UUID.randomUUID().toString();
 
-        String result = jedis.set(key, uuid, "NX", "PX", timeout);
+        String result = jedis.set(key, uuid, SetParams.setParams().nx().px(timeout));
         if ("OK".equalsIgnoreCase(result)) {
             // 枪锁成功
             threadLocal.set(uuid);

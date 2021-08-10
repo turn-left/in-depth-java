@@ -1,9 +1,10 @@
 package com.ethen.chap02.james.lock;
 
-import com.enjoy.utils.FileUtils;
+import com.ethen.chap02.james.utils.FileUtils;
 import org.springframework.data.redis.connection.jedis.JedisConnectionFactory;
 import org.springframework.stereotype.Service;
 import redis.clients.jedis.Jedis;
+import redis.clients.jedis.params.SetParams;
 
 import javax.annotation.Resource;
 import java.util.Arrays;
@@ -55,7 +56,7 @@ public class RedisLock implements Lock {
          * PX：给key加有效期
          * 1000：有效时间为 1 秒
          */
-        String ret = jedis.set(KEY, uuid, "NX", "PX", 1000);
+        String ret = jedis.set(KEY, uuid, SetParams.setParams().nx().px(1000));
 
         //设值成功--抢到了锁
         if ("OK".equals(ret)) {
