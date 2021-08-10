@@ -21,14 +21,14 @@ public class Swagger2 {
 //                .pathMapping("/")
     //                .directModelSubstitute(Date.class,String.class)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.enjoy"))
+                .apis(RequestHandlerSelectors.basePackage("com.ethen"))
                 .paths(PathSelectors.any())
                 .build();
     }
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("Peter的程序")
-                .contact("Peter")
+                .title("ethen的程序")
+                .contact("ethenyang@126.com")
                 .version("1.0")
                 .build();
     }

@@ -5,6 +5,7 @@ import com.ethen.chap02.yang.util.JedisUtils;
 import static com.ethen.common.ResConstant.SUCCESS;
 
 import com.ethen.model.GoodsReq;
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
 import redis.clients.jedis.Jedis;
@@ -15,6 +16,7 @@ import java.util.Map;
  * 购物车
  * fixme 商品加车时间排序如何解决？?
  */
+@Api("购物车逻辑")
 @RequestMapping("/cart")
 @RestController
 public class CartController {
