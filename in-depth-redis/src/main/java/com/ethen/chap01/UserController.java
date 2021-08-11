@@ -1,5 +1,6 @@
 package com.ethen.chap01;
 
+import com.ethen.chap02.yang.util.JedisUtils;
 import com.ethen.model.UserInfo;
 import com.ethen.utils.NoNameUtils;
 import com.ethen.utils.StringUtils;
@@ -22,7 +23,7 @@ public class UserController {
     @PostMapping
     public Object register(@RequestBody UserInfo userInfo) {
         String uuid = StringUtils.uuid();
-        Jedis client = NoNameUtils.getClient(factory);
+        Jedis client = JedisUtils.getClient(factory);
         userInfo.setUserId(uuid);
         Map<String, String> userMap = new HashMap<>();
         String result = client.hmset("user:" + uuid, userMap);

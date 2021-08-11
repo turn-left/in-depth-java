@@ -1,5 +1,6 @@
 package com.ethen.chap01;
 
+import com.ethen.chap02.yang.util.JedisUtils;
 import com.ethen.utils.NoNameUtils;
 import com.ethen.utils.StringUtils;
 import io.swagger.annotations.Api;
@@ -29,7 +30,7 @@ public class DianzanController {
      */
     @PutMapping("/article/{aid}/user/{uid}")
     public Object dianzan(@PathVariable("aid") String articleId, String userId) {
-        Jedis client = NoNameUtils.getClient(factory);
+        Jedis client = JedisUtils.getClient(factory);
         Long res = client.zadd(StringUtils.zanKey(articleId), System.currentTimeMillis(), userId);
         return res;
     }

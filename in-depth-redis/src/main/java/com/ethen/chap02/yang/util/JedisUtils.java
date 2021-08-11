@@ -1,5 +1,6 @@
 package com.ethen.chap02.yang.util;
 
+import org.springframework.data.redis.connection.jedis.JedisConnectionFactory;
 import redis.clients.jedis.Jedis;
 
 public class JedisUtils {
@@ -13,5 +14,9 @@ public class JedisUtils {
         String auth = jedis.auth(REDIS_SECRET);
         System.out.println("auth:" + auth);
         return jedis;
+    }
+
+    public static Jedis getClient(JedisConnectionFactory factory) {
+        return (Jedis) factory.getConnection().getNativeConnection();
     }
 }

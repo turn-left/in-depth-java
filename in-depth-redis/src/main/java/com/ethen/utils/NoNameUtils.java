@@ -10,9 +10,7 @@ import java.util.Map;
 import java.util.Objects;
 
 public class NoNameUtils {
-    public static Jedis getClient(JedisConnectionFactory factory) {
-        return (Jedis) factory.getConnection().getNativeConnection();
-    }
+
 
     @SneakyThrows
     public Map<String, String> object2map(Object obj) {

@@ -1,4 +1,4 @@
-package com.ethen.chap02.james;
+package com.ethen.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -28,7 +28,6 @@ public class Swagger2 {
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 .title("ethen的程序")
-                .contact("ethenyang@126.com")
                 .version("1.0")
                 .build();
     }
