@@ -2,7 +2,6 @@ package com.ethen.chap01;
 
 import com.ethen.chap02.yang.util.JedisUtils;
 import com.ethen.model.UserInfo;
-import com.ethen.utils.NoNameUtils;
 import com.ethen.utils.StringUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

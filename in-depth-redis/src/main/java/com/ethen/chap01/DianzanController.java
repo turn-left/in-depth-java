@@ -1,7 +1,6 @@
 package com.ethen.chap01;
 
 import com.ethen.chap02.yang.util.JedisUtils;
-import com.ethen.utils.NoNameUtils;
 import com.ethen.utils.StringUtils;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;

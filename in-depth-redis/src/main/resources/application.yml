@@ -8,7 +8,7 @@ swagger:
   host: local.dev.com
 
 redis:
-  host: 192.168.10.103
+  host: 192.168.10.101
   port: 6379
 
 
