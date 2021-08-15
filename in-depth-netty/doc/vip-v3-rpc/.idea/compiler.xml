@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="prepare" />
+        <module name="rpc-server-stock" />
+        <module name="rpc-server-sms" />
+        <module name="local-service" />
+        <module name="rpc-reg" />
+        <module name="rpc-client" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="local-service" target="1.8" />
+      <module name="prepare" target="1.5" />
+      <module name="rpc-client" target="1.8" />
+      <module name="rpc-reg" target="1.8" />
+      <module name="rpc-server-sms" target="1.8" />
+      <module name="rpc-server-stock" target="1.8" />
+      <module name="vip-v3-rpc" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="local-service" options="-parameters" />
+      <module name="rpc-client" options="-parameters" />
+      <module name="rpc-reg" options="-parameters" />
+      <module name="rpc-server-sms" options="-parameters" />
+      <module name="rpc-server-stock" options="-parameters" />
+    </option>
+  </component>
+</project>

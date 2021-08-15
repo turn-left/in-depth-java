@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="comet:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutomaticModuleUnloader">
+    <loaded-modules>
+      <module name="rpc-client" />
+      <module name="bio" />
+      <module name="rpc-prepare" />
+      <module name="nio" />
+      <module name="vip-v2-netty" />
+      <module name="rpc-server" />
+      <module name="netty-basic" />
+    </loaded-modules>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="36b99098-fdd7-41b1-84af-4b471d8bf136" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>web</find>
+      <find>channel.read();</find>
+      <find>channel.read();</find>
+    </findStrings>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1OodTQPLfvJehZ8qQihQohWDPGF" />
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/bio/src/cn/enjoyedu/bio" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.enjoyedu.bio" />
+      <recent name="cn.enjoyedu.netbase" />
+      <recent name="cn.enjoyedu.sse" />
+      <recent name="cn.enjoyedu.nettybasic.idlestate" />
+      <recent name="cn.enjoyedu.nio.nio" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\XiangXue\vipLesson\NIOV2\code\vip-v2-netty\netty-rpc-client\src\main\java\cn\enjoyedu\rpc" />
+      <recent name="D:\XiangXue\vipLesson\NIOV2\code\vip-v2-netty" />
+      <recent name="D:\XiangXue\vipLesson\NIOV2\code\vip-v2-netty\ws\src\main\resources" />
+      <recent name="D:\XiangXue\vipLesson\NIOV2\code\vip-v2-netty\ws\src\main\java\cn\enjoyedu\ws" />
+      <recent name="D:\XiangXue\vipLesson\NIOV2\code\vip-v2-netty\netty-adv\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Client">
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AllocateBuffer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.enjoyedu.nio.buffer.AllocateBuffer" />
+      <module name="nio" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.enjoyedu.nio.buffer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.enjoyedu.bio.Client" />
+      <module name="bio" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.enjoyedu.bio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.enjoyedu.bio.Server" />
+      <module name="bio" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.enjoyedu.bio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UseInet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.enjoyedu.netbase.UseInet" />
+      <module name="bio" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.enjoyedu.netbase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UseNetIf" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.enjoyedu.netbase.UseNetIf" />
+      <module name="bio" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.enjoyedu.netbase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StompApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="stomp" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.enjoyedu.stomp.StompApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ws" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.enjoyedu.ws.WsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="comet" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.55" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/comet/index" />
+      <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="comet:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/comet" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_vip-v2-netty" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="54368" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="comet:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.AllocateBuffer" />
+      <item itemvalue="Application.UseInet" />
+      <item itemvalue="Spring Boot.WsApplication" />
+      <item itemvalue="Spring Boot.StompApplication" />
+      <item itemvalue="Tomcat Server.comet" />
+      <item itemvalue="Application.UseNetIf" />
+      <item itemvalue="Application.Server" />
+      <item itemvalue="Application.Client" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.Server" />
+        <item itemvalue="Application.UseNetIf" />
+        <item itemvalue="Application.UseInet" />
+        <item itemvalue="Application.AllocateBuffer" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",ALPHA_COMPARATOR" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="36b99098-fdd7-41b1-84af-4b471d8bf136" name="Default" comment="" />
+      <created>1560693820155</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1560693820155</updated>
+      <workItem from="1560693823054" duration="379000" />
+      <workItem from="1560694303774" duration="2042000" />
+      <workItem from="1561536977040" duration="21438000" />
+      <workItem from="1561883021533" duration="9483000" />
+      <workItem from="1562033058401" duration="1432000" />
+      <workItem from="1562047172110" duration="20191000" />
+      <workItem from="1562206194288" duration="3797000" />
+      <workItem from="1562219988129" duration="18881000" />
+      <workItem from="1562319576205" duration="636000" />
+      <workItem from="1562335173780" duration="50000" />
+      <workItem from="1562335235634" duration="1207000" />
+      <workItem from="1562466854266" duration="819000" />
+      <workItem from="1562468636508" duration="2084000" />
+      <workItem from="1562483842588" duration="17242000" />
+      <workItem from="1562566982913" duration="36000" />
+      <workItem from="1562567046917" duration="5014000" />
+      <workItem from="1562637210957" duration="16975000" />
+      <workItem from="1562811254481" duration="3251000" />
+      <workItem from="1562824137200" duration="18072000" />
+      <workItem from="1562911184562" duration="9718000" />
+      <workItem from="1563096595829" duration="12468000" />
+      <workItem from="1563154706796" duration="654000" />
+      <workItem from="1563169332851" duration="14000" />
+      <workItem from="1563244670361" duration="2931000" />
+      <workItem from="1563258184027" duration="15494000" />
+      <workItem from="1563351891169" duration="1058000" />
+      <workItem from="1563414137742" duration="2929000" />
+      <workItem from="1563429758116" duration="1758000" />
+      <workItem from="1563501508112" duration="1272000" />
+      <workItem from="1563524401245" duration="23339000" />
+      <workItem from="1563611287111" duration="3570000" />
+      <workItem from="1563621065729" duration="12110000" />
+      <workItem from="1563934182831" duration="810000" />
+      <workItem from="1564043745517" duration="1421000" />
+      <workItem from="1564646671538" duration="958000" />
+      <workItem from="1564647896094" duration="116000" />
+      <workItem from="1564648183633" duration="197000" />
+      <workItem from="1564648866091" duration="71000" />
+      <workItem from="1564649033223" duration="4195000" />
+      <workItem from="1564910077652" duration="341000" />
+      <workItem from="1565246424920" duration="1459000" />
+      <workItem from="1565330930517" duration="21000" />
+      <workItem from="1567390034381" duration="878000" />
+      <workItem from="1573693691097" duration="2784000" />
+      <workItem from="1574320604890" duration="286000" />
+      <workItem from="1574407484252" duration="72000" />
+      <workItem from="1577952519240" duration="4549000" />
+      <workItem from="1578292088769" duration="35000" />
+      <workItem from="1580455267242" duration="1221000" />
+      <workItem from="1580461120668" duration="1563000" />
+      <workItem from="1580562927307" duration="162000" />
+      <workItem from="1583331140555" duration="3547000" />
+      <workItem from="1583916911257" duration="1913000" />
+      <workItem from="1583936541170" duration="670000" />
+      <workItem from="1583982576513" duration="153000" />
+      <workItem from="1584090053471" duration="669000" />
+      <workItem from="1584454254884" duration="2773000" />
+      <workItem from="1584694304159" duration="1230000" />
+      <workItem from="1585190124094" duration="680000" />
+      <workItem from="1585212300200" duration="654000" />
+      <workItem from="1585317526844" duration="844000" />
+      <workItem from="1585564439975" duration="196000" />
+      <workItem from="1585708321450" duration="1492000" />
+      <workItem from="1586440867528" duration="618000" />
+      <workItem from="1587867188673" duration="994000" />
+      <workItem from="1587979771266" duration="2550000" />
+      <workItem from="1589943124487" duration="3317000" />
+      <workItem from="1590049110617" duration="920000" />
+      <workItem from="1590733775516" duration="685000" />
+      <workItem from="1590737186560" duration="1560000" />
+      <workItem from="1590847524697" duration="1135000" />
+      <workItem from="1591860016389" duration="1681000" />
+      <workItem from="1591945074221" duration="9000" />
+      <workItem from="1592229271642" duration="714000" />
+      <workItem from="1592359944815" duration="1232000" />
+      <workItem from="1592391017859" duration="675000" />
+      <workItem from="1592401209651" duration="611000" />
+      <workItem from="1593785565614" duration="1237000" />
+      <workItem from="1594389324660" duration="1237000" />
+      <workItem from="1594714775453" duration="850000" />
+      <workItem from="1595166826019" duration="644000" />
+      <workItem from="1595599610526" duration="624000" />
+      <workItem from="1596376954808" duration="672000" />
+      <workItem from="1596721032214" duration="643000" />
+      <workItem from="1597371550412" duration="665000" />
+      <workItem from="1601196099599" duration="54000" />
+      <workItem from="1602746900017" duration="909000" />
+      <workItem from="1603094187834" duration="3596000" />
+      <workItem from="1603356324763" duration="3123000" />
+      <workItem from="1603616108480" duration="8886000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://C:/Program Files/Java/jdk1.8.0_101/src.jar!/java/io/ObjectInputStream.java</url>
+          <line>300</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

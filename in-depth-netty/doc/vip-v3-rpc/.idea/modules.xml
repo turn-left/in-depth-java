@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/local-service/local-service.iml" filepath="$PROJECT_DIR$/local-service/local-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/prepare/prepare.iml" filepath="$PROJECT_DIR$/prepare/prepare.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rpc-client/rpc-client.iml" filepath="$PROJECT_DIR$/rpc-client/rpc-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rpc-reg/rpc-reg.iml" filepath="$PROJECT_DIR$/rpc-reg/rpc-reg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rpc-server-sms/rpc-server-sms.iml" filepath="$PROJECT_DIR$/rpc-server-sms/rpc-server-sms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rpc-server-stock/rpc-server-stock.iml" filepath="$PROJECT_DIR$/rpc-server-stock/rpc-server-stock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vip-v3-rpc.iml" filepath="$PROJECT_DIR$/vip-v3-rpc.iml" />
+    </modules>
+  </component>
+</project>

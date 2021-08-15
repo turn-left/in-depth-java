@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a9f21390-f77a-4fc5-ac12-408c7ec3bc42" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1izReUzEbWQXIYUcaSXnYPN2PBg" />
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/rpc-server-stock/src/main/java/cn/enjoyedu/rpc/rpc/base" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="cn.enjoyedu" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.enjoyedu.rpc.rpc.base" />
+      <recent name="cn.enjoyedu.client.service.impl" />
+      <recent name="cn.enjoyedu.client.service" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\XiangXue\vipLesson\NIOV3\code\vip-v3-rpc\rpc-server-stock\src\main\java\cn\enjoyedu\rpc\rpc\base" />
+      <recent name="D:\XiangXue\vipLesson\NIOV3\code\ketang-v3-rpc\rpc-client\src\main\java\cn\enjoyedu\client\service" />
+      <recent name="D:\XiangXue\vipLesson\NIOV3\code\ketang-v3-rpc\rpc-server-sms\src\main\java\cn\enjoyedu\rpc\base" />
+      <recent name="D:\XiangXue\publicLesson\Source\e_rpc\ketang-rpc-s\prepare\src\main\java\cn\enjoyedu\prepare" />
+      <recent name="D:\XiangXue\publicLesson\Source\e_rpc\ketang-rpc-s" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.RpcClientApplicationTests.rpcTest">
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LisonDyna" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.enjoyedu.prepare.proxy.LisonDyna" />
+      <module name="prepare" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PerformTestUserInfo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.enjoyedu.prepare.serial.protogenesis.PerformTestUserInfo" />
+      <module name="prepare" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.enjoyedu.prepare.serial.protogenesis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RefleDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.enjoyedu.prepare.refle.RefleDemo" />
+      <module name="prepare" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.enjoyedu.prepare.refle.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestUserInfo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.enjoyedu.prepare.serial.protogenesis.TestUserInfo" />
+      <module name="prepare" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.enjoyedu.prepare.serial.protogenesis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RpcClientApplicationTests.rpcTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rpc-client" />
+      <option name="PACKAGE_NAME" value="cn.enjoyedu.rpc.client" />
+      <option name="MAIN_CLASS_NAME" value="cn.enjoyedu.rpc.client.RpcClientApplicationTests" />
+      <option name="METHOD_NAME" value="rpcTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LocalServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="local-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.enjoyedu.localservice.LocalServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RpcClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="rpc-client" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.enjoyedu.rpc.RpcClientApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RpcRegApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="rpc-reg" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.enjoyedu.rpc.RpcRegApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RpcServerSmsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" singleton="false">
+      <module name="rpc-server-sms" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.enjoyedu.rpc.RpcServerSmsApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RpcServerStockApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" singleton="false">
+      <module name="rpc-server-stock" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.enjoyedu.rpc.RpcServerStockApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.LisonDyna" />
+      <item itemvalue="JUnit.RpcClientApplicationTests.rpcTest" />
+      <item itemvalue="Spring Boot.LocalServiceApplication" />
+      <item itemvalue="Spring Boot.RpcClientApplication" />
+      <item itemvalue="Spring Boot.RpcRegApplication" />
+      <item itemvalue="Spring Boot.RpcServerSmsApplication" />
+      <item itemvalue="Spring Boot.RpcServerStockApplication" />
+      <item itemvalue="Application.TestUserInfo" />
+      <item itemvalue="Application.PerformTestUserInfo" />
+      <item itemvalue="Application.RefleDemo" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.RpcClientApplicationTests.rpcTest" />
+        <item itemvalue="Application.RefleDemo" />
+        <item itemvalue="Application.PerformTestUserInfo" />
+        <item itemvalue="Application.TestUserInfo" />
+        <item itemvalue="Application.LisonDyna" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a9f21390-f77a-4fc5-ac12-408c7ec3bc42" name="Default Changelist" comment="" />
+      <created>1580025696174</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580025696174</updated>
+      <workItem from="1580025703380" duration="15755000" />
+      <workItem from="1602908529327" duration="2108000" />
+      <workItem from="1602915489420" duration="25000" />
+      <workItem from="1602925993717" duration="8294000" />
+      <workItem from="1603094202874" duration="96000" />
+      <workItem from="1603616418731" duration="11525000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>
