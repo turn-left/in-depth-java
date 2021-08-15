@@ -13,6 +13,7 @@
         <module>in-depth-concurrent</module>
         <module>in-depth-concurrent</module>
         <module>in-depth-redis</module>
+        <module>in-depth-netty</module>
     </modules>
 
     <properties>
