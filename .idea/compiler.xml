@@ -7,13 +7,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="concurrent" />
         <module name="in-depth-netty" />
         <module name="in-depth-jvm" />
         <module name="in-depth-concurrent" />
         <module name="in-depth-redis" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="8" />
+    <bytecodeTargetLevel target="8">
+      <module name="concurrent" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
