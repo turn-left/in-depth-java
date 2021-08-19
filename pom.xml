@@ -15,6 +15,7 @@
         <module>in-depth-redis</module>
         <module>in-depth-netty</module>
         <module>in-depth-rpc</module>
+        <module>rpc-client</module>
     </modules>
 
     <properties>

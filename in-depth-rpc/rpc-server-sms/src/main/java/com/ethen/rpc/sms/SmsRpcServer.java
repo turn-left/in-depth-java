@@ -4,6 +4,7 @@ import com.ethen.rpc.base.RpcServerFrame;
 import com.ethen.rpc.remote.SendSms;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.stereotype.Component;
 
@@ -15,6 +16,12 @@ import java.util.Random;
 @Component
 public class SmsRpcServer implements BeanPostProcessor {
     private final RpcServerFrame rpcServerFrame;
+
+    @Value("${server.sms.host}")
+    private String host;
+
+    @Value("${server.sms.port}")
+    private int port;
 
     @Autowired
     public SmsRpcServer(RpcServerFrame rpcServerFrame) {
@@ -31,9 +38,8 @@ public class SmsRpcServer implements BeanPostProcessor {
      */
     @Override
     public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
-        int port = 8778 + new Random().nextInt(100);
         // fixme 启动SendSms服务
-        rpcServerFrame.start(SendSms.class.getName(), "127.0.0.1", port);
+        rpcServerFrame.startService(SendSms.class.getName(), host, port);
         return bean;
     }
 }

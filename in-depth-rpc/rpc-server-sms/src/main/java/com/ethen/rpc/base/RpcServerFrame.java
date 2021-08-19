@@ -14,28 +14,33 @@ import java.util.concurrent.ExecutorService;
 /**
  * 解决RPC通信问题-通用组件
  */
-@Component
 public class RpcServerFrame {
-
     private final ServiceRegister register;
     private final ExecutorService pool;
 
-    @Autowired
     public RpcServerFrame(ServiceRegister register, ExecutorService pool) {
         this.register = register;
         this.pool = pool;
     }
 
-    public void start(String serviceName, String host, int port) {
+    /**
+     * 启动rpc服务
+     *
+     * @param serviceName
+     * @param host
+     * @param port
+     */
+    public void startService(String serviceName, String host, int port) {
         try {
             final ServerSocket server = new ServerSocket();
             server.bind(new InetSocketAddress(host, port));
+            System.err.println("=>>>>>>>>服务启动=>>>>>>>>主机:%s,端口:%d");
+
             while (true) {
                 // 接收客户端请求(TCP三次握手建立连接)
                 final Socket accept = server.accept();
-                final Class<?> serviceImpl = register.getService(serviceName);
+                final Class<?> serviceImpl = register.getLocalService(serviceName);
                 // fixme 分配线程与客户端交互
-//                new Thread(new ServerTask(accept, serviceImpl)).start();
                 pool.execute(new ServerTask(accept, serviceImpl));
             }
         } catch (IOException e) {
