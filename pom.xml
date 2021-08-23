@@ -14,7 +14,7 @@
         <module>in-depth-concurrent</module>
         <module>in-depth-redis</module>
         <module>in-depth-netty</module>
-        <module>netty-hello</module>
+        <module>bio-nio-hello</module>
     </modules>
 
     <properties>
