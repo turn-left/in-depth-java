@@ -7,14 +7,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="bio-nio-hello" />
         <module name="in-depth-jvm" />
         <module name="in-depth-concurrent" />
         <module name="in-depth-redis" />
-        <module name="rpc-client" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
+      <module name="bio-nio-hello" target="8" />
       <module name="concurrent" target="1.5" />
       <module name="in-depth-rpc" target="8" />
       <module name="netty-hello" target="8" />
