@@ -1,6 +1,9 @@
 package com.ethen.netty.pkg;
 /**
- * TCP粘包拆包demo
+ * TCP粘包拆包问题分析解决
+ * 1.在包尾部添加分隔符，如回车换行
+ * 2.数据包定长，空位填充
+ * 3.消息分为消息头/消息体，消息头描述消息体
  * <p>
  * Nagle算法
  * Nagle算法的规则（可参考tcp_output.c文件里tcp_nagle_check函数注释）：
