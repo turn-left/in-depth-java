@@ -15,7 +15,7 @@ public class UniAnswerHandler extends SimpleChannelInboundHandler<DatagramPacket
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, DatagramPacket msg) throws Exception {
         String content = msg.content().toString(CharsetUtil.UTF_8);
-        System.out.println("接收到UDP消息：" + content + " raw: " + msg);
+        System.out.println("接收到UDP消息：" + content + "\nraw: " + msg);
         // 应答
         if (UniQuestionSide.QUESTION.equals(content)) {
             ByteBuf buf = Unpooled.copiedBuffer(nextQuote().getBytes(StandardCharsets.UTF_8));
