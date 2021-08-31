@@ -11,8 +11,10 @@
     <packaging>pom</packaging>
     <description>netty实践与深入分析</description>
     <modules>
-        <module>nio-hello</module>
+        <module>bio-nio-hello</module>
+        <module>netty-hello</module>
         <module>server-push</module>
+        <module>in-depth-rpc</module>
     </modules>
     <artifactId>in-depth-netty</artifactId>
 
