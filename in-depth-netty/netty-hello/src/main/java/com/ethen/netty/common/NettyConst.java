@@ -3,6 +3,8 @@ package com.ethen.netty.common;
 public interface NettyConst {
     String DEF_HOST = "127.0.0.1";
     int DEF_ECHO_PORT = 30000;
+    int NETTY_HTTP_PORT = 8080;
+    int NETTY_HTTPS_PORT = 443443;
     int DEF_PKG_PORT = 30001;
     int EPHEMERAL_PORT = 0;
     int LINE_BASE_MAX_LEN = 1024;

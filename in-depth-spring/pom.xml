@@ -2,21 +2,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>in-depth-java</artifactId>
+        <groupId>com.ethen</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.ethen</groupId>
-    <artifactId>in-depth-java</artifactId>
-    <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>in-depth-jvm</module>
-        <module>in-depth-concurrent</module>
-        <module>in-depth-concurrent</module>
-        <module>in-depth-redis</module>
-        <module>in-depth-netty</module>
-        <module>netty-rpc-frame</module>
-        <module>in-depth-spring</module>
-    </modules>
+    <artifactId>in-depth-spring</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
