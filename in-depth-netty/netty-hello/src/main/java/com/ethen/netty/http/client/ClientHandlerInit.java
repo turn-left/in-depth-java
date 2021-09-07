@@ -23,7 +23,7 @@ public class ClientHandlerInit extends ChannelInitializer<SocketChannel> {
         /*fixme 消息聚合？原理？*/
         pl.addLast("aggregator", new HttpObjectAggregator(NettyConst.HTTP_AGGREGATE_LEN));
         /*解压缩 和服务端压缩配套 不必须*/
-        pl.addLast("decompressor", new HttpContentDecompressor());
+//        pl.addLast("decompressor", new HttpContentDecompressor());
         pl.addLast(new ClientBusiHandler());
     }
 }

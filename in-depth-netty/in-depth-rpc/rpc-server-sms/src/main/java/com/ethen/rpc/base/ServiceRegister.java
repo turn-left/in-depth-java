@@ -1,6 +1,8 @@
 package com.ethen.rpc.base;
 
 
+import org.springframework.stereotype.Component;
+
 import java.util.Map;
 import java.util.Objects;
 import java.util.concurrent.ConcurrentHashMap;

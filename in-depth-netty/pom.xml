@@ -7,6 +7,7 @@
         <groupId>com.ethen</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
+    <artifactId>in-depth-netty</artifactId>
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
     <description>netty实践与深入分析</description>
@@ -18,7 +19,6 @@
         <module>netty-rpc-frame</module>
         <module>netty-rpc-spring</module>
     </modules>
-    <artifactId>in-depth-netty</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>

@@ -33,7 +33,7 @@ public class ClientBusiHandler extends ChannelInboundHandlerAdapter {
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
         URI uri = new URI("/test/hello");
-        String msg = "Hello,Netty";
+        String msg = "Hello,Netty!";
         FullHttpRequest request = new DefaultFullHttpRequest(
                 HttpVersion.HTTP_1_1,
                 HttpMethod.GET, uri.toASCIIString(),
