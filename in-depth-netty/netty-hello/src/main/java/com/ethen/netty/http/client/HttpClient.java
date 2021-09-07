@@ -10,6 +10,7 @@ import io.netty.channel.socket.nio.NioSocketChannel;
 import java.net.InetSocketAddress;
 
 public class HttpClient {
+    public static final String HOST = "127.0.0.1";
     private final String remoteHost;
     private final int port;
 

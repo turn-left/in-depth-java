@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 /**
  * 简易HTTP业务处理handler
  */
-public class BusinessHandler extends ChannelInboundHandlerAdapter {
+public class ServerBusiHandler extends ChannelInboundHandlerAdapter {
     /**
      * 当连接建立时调用
      */
