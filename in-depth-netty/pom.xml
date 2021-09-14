@@ -18,6 +18,7 @@
         <module>in-depth-rpc</module>
         <module>netty-rpc-frame</module>
         <module>netty-rpc-spring</module>
+        <module>netty-websocket</module>
     </modules>
 
     <properties>
