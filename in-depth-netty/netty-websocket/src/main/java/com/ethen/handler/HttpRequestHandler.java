@@ -36,37 +36,39 @@ public class HttpRequestHandler extends SimpleChannelInboundHandler<FullHttpRequ
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, FullHttpRequest request) throws Exception {
         // 1.非HTTP请求，向后转发
-        if (!this.wsUri.equals(request.uri())) {
+        if (this.wsUri.equalsIgnoreCase(request.uri())) {
             ctx.fireChannelRead(request.retain()); // fixme retain()了解一下？
-        }
-        // 2.HTTP100处理
-        if (HttpUtil.is100ContinueExpected(request)) {
-            this.sendHttp100Resp(ctx);
-        }
-        // 3.返回index.html
-        RandomAccessFile file = new RandomAccessFile(INDEX, "r"); // fixme RandomAccessFile了解一下？
-        HttpResponse response = new DefaultHttpResponse(request.protocolVersion(), HttpResponseStatus.OK);
-        response.headers().set(HttpHeaderNames.CONTENT_TYPE, "text/html; charset=UTF-8");
-        // 4.处理keep-alive请求
-        boolean keepAlive = HttpUtil.isKeepAlive(request);
-        if (keepAlive) {
-            response.headers().set(HttpHeaderNames.CONTENT_LENGTH, file.length());
-            response.headers().set(HttpHeaderNames.CONNECTION, HttpHeaderValues.KEEP_ALIVE);
-        }
-        // 5.写response
-        ctx.write(response);
-        // 6.写文件
-        if (ctx.pipeline().get(SslHandler.class) == null) {
-            ctx.write(new DefaultFileRegion(file.getChannel(), 0, file.length()));
         } else {
-            ctx.write(new ChunkedNioFile(file.getChannel()));
+            // 2.HTTP100处理
+            if (HttpUtil.is100ContinueExpected(request)) {
+                this.sendHttp100Resp(ctx);
+            }
+            // 3.返回index.html
+            RandomAccessFile file = new RandomAccessFile(INDEX, "r"); // fixme RandomAccessFile了解一下？
+            HttpResponse response = new DefaultHttpResponse(request.protocolVersion(), HttpResponseStatus.OK);
+            response.headers().set(HttpHeaderNames.CONTENT_TYPE, "text/html; charset=UTF-8");
+            // 4.处理keep-alive请求
+            boolean keepAlive = HttpUtil.isKeepAlive(request);
+            if (keepAlive) {
+                response.headers().set(HttpHeaderNames.CONTENT_LENGTH, file.length());
+                response.headers().set(HttpHeaderNames.CONNECTION, HttpHeaderValues.KEEP_ALIVE);
+            }
+            // 5.写response
+            ctx.write(response);
+            // 6.写文件
+            if (ctx.pipeline().get(SslHandler.class) == null) {
+                ctx.write(new DefaultFileRegion(file.getChannel(), 0, file.length()));
+            } else {
+                ctx.write(new ChunkedNioFile(file.getChannel()));
+            }
+            // 7.写响应消息结束符号 并冲刷消息
+            ChannelFuture future = ctx.writeAndFlush(LastHttpContent.EMPTY_LAST_CONTENT);
+            // 8.fixme 如果请求不是keep-alive，写操作完毕之后关闭channel
+            if (!keepAlive) {
+                future.addListener(ChannelFutureListener.CLOSE);
+            }
         }
-        // 7.写响应消息结束符号 并冲刷消息
-        ChannelFuture future = ctx.writeAndFlush(LastHttpContent.EMPTY_LAST_CONTENT);
-        // 8.fixme 如果请求不是keep-alive，写操作完毕之后关闭channel
-        if (!keepAlive) {
-            future.addListener(ChannelFutureListener.CLOSE);
-        }
+
     }
 
     private void sendHttp100Resp(ChannelHandlerContext ctx) {
