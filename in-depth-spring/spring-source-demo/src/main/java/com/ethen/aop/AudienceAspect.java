@@ -10,7 +10,7 @@ import org.aspectj.lang.annotation.*;
 @Aspect
 public class AudienceAspect {
     /**
-     * 拦截com.ethen包下所有类的任意返回值的方法
+     * 拦截com.ethen.aop.Performance.perform任意返回值的方法
      */
     @Pointcut("execution(** com.ethen.aop.Performance.perform(..))")
     public void performance() {
