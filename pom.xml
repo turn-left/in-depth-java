@@ -15,6 +15,7 @@
         <module>in-depth-redis</module>
         <module>in-depth-netty</module>
         <module>in-depth-spring</module>
+        <module>java-agent</module>
     </modules>
 
     <properties>
