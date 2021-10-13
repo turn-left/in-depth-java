@@ -16,6 +16,7 @@
         <module>in-depth-netty</module>
         <module>in-depth-spring</module>
         <module>java-agent</module>
+        <module>in-depth-design-pattern</module>
     </modules>
 
     <properties>
