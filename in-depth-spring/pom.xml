@@ -11,6 +11,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>spring-source-demo</module>
+        <module>ethen-spring-mvp</module>
     </modules>
     <artifactId>in-depth-spring</artifactId>
 
