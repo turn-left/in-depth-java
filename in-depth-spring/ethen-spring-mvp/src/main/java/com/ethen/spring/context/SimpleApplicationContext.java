@@ -1,8 +1,10 @@
 package com.ethen.spring.context;
 
 
+import com.ethen.spring.annotation.Component;
 import com.ethen.spring.annotation.ComponentScan;
 import com.ethen.spring.beans.BeanDefinition;
+import com.ethen.spring.util.StringUtils;
 
 import java.io.File;
 import java.net.URL;
@@ -59,7 +61,7 @@ public class SimpleApplicationContext {
                 URL resource = classLoader.getResource(path);
                 assert resource != null;
                 File file = new File(resource.getFile());
-                scanFile(file, classNameList);
+                scanClassFile(file, classNameList);
             }
             // 加载类
             if (classNameList.size() <= 0) {
@@ -75,17 +77,28 @@ public class SimpleApplicationContext {
             // 加载类
             Class<?> klass = classLoader.loadClass(className);
             // 是否为component
-            // scope是否为singleton
+            if (klass.isAnnotationPresent(Component.class)) {
+                Component comp = klass.getAnnotation(Component.class);
+                String beanName = StringUtils.isEmpty(comp.value()) ? klass.getSimpleName() : comp.value();
+                BeanDefinition bd = new BeanDefinition();
+                bd.setKlass(klass);
+                bd.setName(beanName);
+                // scope是否为singleton
+                // 是否为 Lazy Bean
+
+            }
+
+
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
     }
 
-    public void scanFile(File file, List<String> classNameList) {
+    public void scanClassFile(File file, List<String> classNameList) {
         if (file.isDirectory()) {
             for (File fl : Objects.requireNonNull(file.listFiles())) {
                 if (fl.isDirectory()) {
-                    scanFile(fl, classNameList);
+                    scanClassFile(fl, classNameList);
                 } else {
                     addClassNameList(fl, classNameList);
                 }

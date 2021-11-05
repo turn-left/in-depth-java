@@ -9,10 +9,10 @@ import lombok.ToString;
 @Setter
 @ToString
 public class BeanDefinition {
+    private String name;
     private Class<?> klass;
     private BeanScope scope;
     private boolean isLazy;
-
 
     public enum BeanScope {
         singleton, prototype
