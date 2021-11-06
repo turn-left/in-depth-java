@@ -1,4 +1,4 @@
-package com.ethen.spring.config;
+package com.ethen.spring.testdata.config;
 
 import com.ethen.spring.annotation.Component;
 import com.ethen.spring.annotation.ComponentScan;
