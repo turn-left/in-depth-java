@@ -5,6 +5,7 @@ import com.ethen.spring.annotation.Component;
 import com.ethen.spring.beans.InitializingBean;
 import com.ethen.spring.testdata.bean.RegisterService;
 import com.ethen.spring.testdata.bean.UserService;
+import com.ethen.spring.util.TimeUtil;
 
 @Component
 public class RegisterServiceImpl implements RegisterService, InitializingBean {
@@ -15,7 +16,7 @@ public class RegisterServiceImpl implements RegisterService, InitializingBean {
     @Override
     public void register() {
         System.err.println("RegisterService do register() ...");
-        System.err.println("userService:" + userService);
+        TimeUtil.spend(1000L);
     }
 
     @Override

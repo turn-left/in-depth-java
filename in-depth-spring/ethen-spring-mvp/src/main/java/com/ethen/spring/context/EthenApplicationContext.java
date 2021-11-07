@@ -4,15 +4,14 @@ package com.ethen.spring.context;
 import com.ethen.spring.annotation.*;
 import com.ethen.spring.beans.BeanDefinition;
 import com.ethen.spring.beans.BeanNameGenerator;
+import com.ethen.spring.beans.BeanPostProcessor;
 import com.ethen.spring.beans.InitializingBean;
 import com.ethen.spring.exception.BeanNotExistException;
-import com.ethen.spring.util.StringUtils;
 
 import java.io.File;
 import java.lang.reflect.Field;
 import java.net.URL;
 import java.util.*;
-import java.util.stream.Stream;
 
 /**
  * IDEA启动java程序时调用java命令详情
@@ -42,12 +41,11 @@ import java.util.stream.Stream;
  * 。。。
  */
 public class EthenApplicationContext {
-    private final Class<?> configClass;
     private final Map<String, BeanDefinition> beanDefinitionMap = new HashMap<>();
     private final Map<String, Object> singletonObjects = new HashMap<>(); // 并发控制 ？？
+    private final List<BeanPostProcessor> postProcessorList = new ArrayList<>();
 
     public EthenApplicationContext(Class<?> configClass) {
-        this.configClass = configClass;
 
         /* 扫描执行包，识别出Spring组件，生成Bean定义添加到Map中备用 */
         doScanObtainBeanDefinitionMap(configClass);
@@ -108,6 +106,11 @@ public class EthenApplicationContext {
             }
             // 是否为component
             if (klass.isAnnotationPresent(Component.class)) {
+                // fixme beanPostProcessorList 扩展点入口初始化 ！！
+                if (BeanPostProcessor.class.isAssignableFrom(klass)) {
+                    BeanPostProcessor postProcessor = (BeanPostProcessor) klass.newInstance();
+                    postProcessorList.add(postProcessor);
+                }
                 String beanName = BeanNameGenerator.gen(klass);
                 BeanDefinition bd = new BeanDefinition();
                 bd.setKlass(klass);
@@ -124,7 +127,7 @@ public class EthenApplicationContext {
                 // 添加beanDefinition
                 beanDefinitionMap.put(beanName, bd);
             }
-        } catch (ClassNotFoundException e) {
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException e) {
             e.printStackTrace();
         }
     }
@@ -197,10 +200,24 @@ public class EthenApplicationContext {
                     fd.set(instance, getBean(fd.getName()));
                 }
             }
+            /*
+             * 初始化前
+             * fixme 属性赋值扩展点 配置中心
+             */
+            for (BeanPostProcessor postProcessor : postProcessorList) {
+                postProcessor.postProcessBeforeInitialization(instance, name);
+            }
             // 初始化
-            if (InitializingBean.class.isAssignableFrom(klass)) {
+            if (instance instanceof InitializingBean) {
                 InitializingBean initObject = (InitializingBean) instance;
                 initObject.afterPropertiesSet();
+            }
+            /*
+             * 初始化后
+             * fixme AOP扩展点
+             */
+            for (BeanPostProcessor postProcessor : postProcessorList) {
+                instance = postProcessor.postProcessAfterInitialization(instance, name);
             }
             return instance;
         } catch (InstantiationException | IllegalAccessException e) {
