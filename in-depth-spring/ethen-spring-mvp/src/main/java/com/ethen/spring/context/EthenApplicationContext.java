@@ -132,7 +132,7 @@ public class EthenApplicationContext {
         }
     }
 
-    public void scanClassFile(File file, List<String> classNameList) {
+    private void scanClassFile(File file, List<String> classNameList) {
         if (file.isDirectory()) {
             for (File fl : Objects.requireNonNull(file.listFiles())) {
                 if (fl.isDirectory()) {
@@ -154,9 +154,10 @@ public class EthenApplicationContext {
 
     /**
      * 从Spring容器中获取bean
+     * <p>
      * 1.singleton Bean直接从单例池(一级缓存中获取)
      * 2.缓存中没有触发Bean的创建
-     * 3.sinleton的创建后放到单例池中
+     * 3.singleton的创建后放到单例池中
      * 4.prototype每次返回新的对象
      */
     public <T> T getBean(String name) {
