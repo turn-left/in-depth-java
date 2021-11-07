@@ -3,6 +3,8 @@ package com.ethen.spring.context;
 
 import com.ethen.spring.annotation.*;
 import com.ethen.spring.beans.BeanDefinition;
+import com.ethen.spring.beans.BeanNameGenerator;
+import com.ethen.spring.beans.InitializingBean;
 import com.ethen.spring.exception.BeanNotExistException;
 import com.ethen.spring.util.StringUtils;
 
@@ -106,8 +108,7 @@ public class EthenApplicationContext {
             }
             // 是否为component
             if (klass.isAnnotationPresent(Component.class)) {
-                Component comp = klass.getAnnotation(Component.class);
-                String beanName = StringUtils.isEmpty(comp.value()) ? StringUtils.firstLower(klass.getSimpleName()) : comp.value();
+                String beanName = BeanNameGenerator.gen(klass);
                 BeanDefinition bd = new BeanDefinition();
                 bd.setKlass(klass);
                 bd.setName(beanName);
@@ -196,12 +197,16 @@ public class EthenApplicationContext {
                     fd.set(instance, getBean(fd.getName()));
                 }
             }
+            // 初始化
+            if (InitializingBean.class.isAssignableFrom(klass)) {
+                InitializingBean initObject = (InitializingBean) instance;
+                initObject.afterPropertiesSet();
+            }
             return instance;
         } catch (InstantiationException | IllegalAccessException e) {
             e.printStackTrace();
+            return null;
         }
-        return null;
-
     }
 
 }
