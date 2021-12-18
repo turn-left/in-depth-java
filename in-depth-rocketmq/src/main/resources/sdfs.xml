@@ -1,0 +1,17 @@
+<repositories>
+    <repository>
+        <id>Ibiblio</id>
+        <name>Ibiblio</name>
+        <url>
+            http://www.ibiblio.org/maven/
+        </url>
+    </repository>
+
+    <repository>
+        <id>PlanetMirror</id>
+        <name>Planet Mirror</name>
+        <url>
+            http://public.planetmirror.com/pub/maven/
+        </url>
+    </repository>
+</repositories>

@@ -17,6 +17,7 @@
         <module>in-depth-spring</module>
         <module>in-depth-agent</module>
         <module>in-depth-design-pattern</module>
+        <module>in-depth-rocketmq</module>
     </modules>
 
     <properties>
