@@ -18,6 +18,7 @@
         <module>in-depth-agent</module>
         <module>in-depth-design-pattern</module>
         <module>in-depth-rocketmq</module>
+        <module>in-depth-mongo</module>
     </modules>
 
     <properties>
