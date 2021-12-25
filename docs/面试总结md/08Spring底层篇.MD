@@ -4,7 +4,7 @@
 <h3>
     Spring底层篇
     </h3>
-    === <font size="5">图灵： 楼兰</font> ===
+    
 </center>
 
 ## 一、什么是Spring？谈谈你对IOC和AOP的理解。
