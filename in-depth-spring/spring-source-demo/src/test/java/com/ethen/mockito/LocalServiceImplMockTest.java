@@ -1,7 +1,6 @@
 package com.ethen.mockito;
 
 import com.ethen.data.model.Node;
-import com.ethen.data.service.RemoteService;
 import com.ethen.data.service.impl.LocalServiceImpl;
 import com.ethen.data.service.impl.RemoteServiceImpl;
 import org.junit.Assert;
@@ -15,7 +14,7 @@ import org.mockito.junit.MockitoJUnitRunner;
 import org.powermock.reflect.Whitebox;
 
 /**
- * mockito测试
+ * mockito测试01
  * <p>
  * Mockito一般通过创建mock或spy对象，并制定具体返回规则来实现模拟的功能，在调用完成后还可以进行方法调用验证以检验程序逻辑是否正确。
  * <br>mock和spy对象的区别是mock对象对于未指定处理规则的调用会按方法返回值类型返回该类型的默认值。
