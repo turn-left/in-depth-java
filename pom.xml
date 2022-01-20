@@ -24,8 +24,8 @@
         <module>in-depth-design-pattern</module>
         <module>in-depth-rocketmq</module>
         <module>in-depth-mongo</module>
-        <module>alipay-in-action</module>
         <module>in-depth-alipay</module>
+        <module>in-depth-mybatis</module>
     </modules>
 
     <properties>
