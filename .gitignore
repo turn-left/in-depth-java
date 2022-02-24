@@ -1,1 +1,3 @@
 /in-depth-agent/target/
+/target
+*.class
