@@ -26,6 +26,7 @@
         <module>in-depth-mongo</module>
         <module>in-depth-alipay</module>
         <module>in-depth-mybatis</module>
+        <module>in-depth-java-feature</module>
     </modules>
 
     <properties>

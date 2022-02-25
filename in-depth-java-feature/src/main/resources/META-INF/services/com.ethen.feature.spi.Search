@@ -1,0 +1,2 @@
+com.ethen.feature.spi.provider.ElasticSearchProvider
+com.ethen.feature.spi.provider.MongoSearchProvider
