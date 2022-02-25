@@ -28,8 +28,10 @@
 - [常见面试提汇总](docs/面试/01常见面试问题汇总.md)
 - [java基础、算法、操作系统、网络、系统设计](https://github.com/CyC2018/CS-Notes)
 
+#### 参考资源
 
-
+- [java全栈知识体系](https://pdai.tech/md/java/basic/java-basic-oop.html)
+- [java全栈面试点](https://pdai.tech/md/interview/x-interview.html)
 
 
 
