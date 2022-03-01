@@ -31,7 +31,13 @@
 #### 参考资源
 
 - [java全栈知识体系](https://pdai.tech/md/java/basic/java-basic-oop.html)
-- [java全栈面试点](https://pdai.tech/md/interview/x-interview.html)
+- [Web容器 - Tomcat知识体系详解](https://pdai.tech/md/framework/tomcat/tomcat-x-design-web-container.html)
+- [ORM框架 - MyBatis知识体系详解](https://pdai.tech/md/framework/tomcat/tomcat-x-design-web-container.html)
+- [Spring框架知识体系详解](https://pdai.tech/md/spring/spring.html)
+- [SpringBoot 知识体系详解](https://pdai.tech/md/spring/springboot/springboot.html)
+
+- [分布式系统 - 知识体系](https://pdai.tech/md/arch/arch-z-overview.html)
+- [系统设计和架构案例](https://pdai.tech/md/arch/arch-example-seckill.html)
 
 
 
