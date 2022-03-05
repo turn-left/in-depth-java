@@ -35,9 +35,8 @@
 - [ORM框架 - MyBatis知识体系详解](https://pdai.tech/md/framework/tomcat/tomcat-x-design-web-container.html)
 - [Spring框架知识体系详解](https://pdai.tech/md/spring/spring.html)
 - [SpringBoot 知识体系详解](https://pdai.tech/md/spring/springboot/springboot.html)
-
 - [分布式系统 - 知识体系](https://pdai.tech/md/arch/arch-z-overview.html)
 - [系统设计和架构案例](https://pdai.tech/md/arch/arch-example-seckill.html)
-
+- [java并发编程系列文章](https://www.javazhiyin.com/topic/thread)
 
 
