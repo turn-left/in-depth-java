@@ -21,11 +21,12 @@
 
 #### 归档文章
 
-- [Java常用机制 - SPI机制详解](/docs/articles/Java常用机制-SPI机制详解.md)
+- [Java常用机制 - SPI机制详解](/docs/feature/Java常用机制-SPI机制详解.md)
+- [JVM：类加载机制分析](/docs/jvm/JVM：类加载机制分析.md)
 
 #### 聚焦面试
 
-- [常见面试提汇总](docs/面试/01常见面试问题汇总.md)
+- [常见面试提汇总](docs/interview/01常见面试问题汇总.md)
 - [java基础、算法、操作系统、网络、系统设计](https://github.com/CyC2018/CS-Notes)
 
 #### 参考资源
