@@ -21,8 +21,8 @@
 
 #### 归档文章
 
-- [Java常用机制 - SPI机制详解](/docs/feature/Java常用机制-SPI机制详解.md)
-- [JVM：类加载机制分析](/docs/jvm/JVM：类加载机制分析.md)
+- [Java常用机制：SPI机制详解](/docs/feature/Java常用机制：SPI机制详解.md)
+- [JVM基础：类加载机制分析](/docs/jvm/JVM基础：类加载机制分析.md)
 
 #### 聚焦面试
 
