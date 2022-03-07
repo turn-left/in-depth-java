@@ -19,10 +19,28 @@
 - 设计模式
 - 系统建模
 
-#### 归档文章
+#### java特性系列
 
 - [Java常用机制：SPI机制详解](/docs/feature/Java常用机制：SPI机制详解.md)
+
+#### jvm系列
+
+- [JVM基础-Java内存模型详解.md](/docs/jvm/JVM基础-Java内存模型详解.md)
+- [JVM基础-Java垃圾回收器G1详解.md](/docs/jvm/JVM基础-Java垃圾回收器G1详解.md)
+- [JVM基础-Java垃圾回收基础.md](/docs/jvm/JVM基础-Java垃圾回收基础.md)
+- [JVM基础-JVM内存结构.md](/docs/jvm/JVM基础-JVM内存结构.md)
 - [JVM基础：类加载机制分析](/docs/jvm/JVM基础：类加载机制分析.md)
+- [JVM基础：类加载机制分析.md](/docs/jvm/JVM基础：类加载机制分析.md)
+- [调试排错-9种常见的CMS GC问题分析与解决.md](/docs/jvm/调试排错-9种常见的CMS-GC问题分析与解决.md)
+- [调试排错-Java-OOM分析.md](/docs/jvm/调试排错-Java-OOM分析.md)
+- [调试排错-Java动态调试技术原理.md](/docs/jvm/调试排错-Java动态调试技术原理.md)
+- [调试排错-Java应用在线调试Arthas.md](/docs/jvm/调试排错-Java应用在线调试Arthas.md)
+- [调试排错-Java线程Dump分析.md](/docs/jvm/调试排错-Java线程Dump分析.md)
+- [调试排错-Java问题排查：Linux命令.md](/docs/jvm/调试排错-Java问题排查：Linux命令.md)
+- [调试排错-Java问题排查：工具单 New.md](/docs/jvm/调试排错-Java问题排查：工具单New.md)
+- [调试排错-JVM调优参数.md](/docs/jvm/调试排错-JVM调优参数.md)
+
+#### 并发编程系列
 
 #### 聚焦面试
 
