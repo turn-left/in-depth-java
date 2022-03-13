@@ -38,6 +38,7 @@
 - [调试排错-Java应用在线调试Arthas](/docs/jvm/调试排错-Java应用在线调试Arthas.md)
 - [调试排错-Java问题排查：Linux命令](/docs/jvm/调试排错-Java问题排查：Linux命令.md)
 - [调试排错-Java问题排查：工具单 New](/docs/jvm/调试排错-Java问题排查：工具单New.md)
+- [调试排错-Java应用故障诊断](/docs/jvm/调试排错-Java应用故障诊断.md)
 
 #### 并发编程系列
 
