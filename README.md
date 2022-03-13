@@ -57,5 +57,5 @@
 - [分布式系统 - 知识体系](https://pdai.tech/md/arch/arch-z-overview.html)
 - [系统设计和架构案例](https://pdai.tech/md/arch/arch-example-seckill.html)
 - [java并发编程系列文章](https://www.javazhiyin.com/topic/thread)
-
+- [JAVACORE-核心技术教程](https://dunwu.github.io/javacore/)
 
