@@ -19,6 +19,12 @@
 - 设计模式
 - 系统建模
 
+#### java SE8 整体架构
+
+[Description-of-Java-Conceptual-Diagram](https://docs.oracle.com/javase/8/docs/)
+<br>
+![img.png](docs/feature/imgs/Description-of-Java-Conceptual-Diagram.png)
+
 #### java特性系列
 
 - [Java常用机制：SPI机制详解](/docs/feature/Java常用机制：SPI机制详解.md)
