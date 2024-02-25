@@ -7,3 +7,7 @@
 > 4. **JavaFX**：JavaFX是用于创建丰富互动式用户界面的现代化工具包，它也提供了一些图片处理的功能，如图片加载、显示、变换等。
 > 5. **Apache Commons Imaging**：Apache Commons Imaging是一个开源的Java库，提供了对多种图像格式的读写支持，包括BMP、GIF、JPEG、PNG等。 
 > 这些API可以根据具体需求选择合适的来处理图片。如果只是简单的图片加载、保存和显示，Java 2D和Java Image I/O API就足够了。如果需要更复杂的图像处理功能，可以考虑使用Java Advanced Imaging或其他第三方库。z
+
+
+## 参考资料
+- [图像如何存储在计算机中？](https://zhuanlan.zhihu.com/p/367823319)
